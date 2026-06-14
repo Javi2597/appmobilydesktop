@@ -9,14 +9,9 @@ vídeo externo.
 
 ## Capturas
 
-Una página cargada en ambas vistas a la vez (móvil 375 px + escritorio), con el
-scroll sincronizado:
-
-![Vista con una página cargada](screenshots/preview-pagina.png)
-
-Estado inicial, listo para escribir una URL:
-
-![Vista inicial vacía](screenshots/preview-vacia.png)
+| Una página cargada en ambas vistas (scroll sincronizado) | Estado inicial |
+|:---:|:---:|
+| <img src="screenshots/preview-pagina.png" alt="Vista con una página cargada" width="420" /> | <img src="screenshots/preview-vacia.png" alt="Vista inicial vacía" width="420" /> |
 
 ## Descargar (usuarios)
 
