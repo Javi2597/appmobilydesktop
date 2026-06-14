@@ -5,7 +5,7 @@ App de escritorio (Electron) para ver cualquier URL simultáneamente en una
 escritorio**, lado a lado. Pensada para grabar el contenido con un grabador de
 vídeo externo.
 
-![Icono de la app](build/icon.png)
+<img src="build/icon.png" alt="Icono de la app" width="128" />
 
 ## Descargar (usuarios)
 
