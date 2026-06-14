@@ -1,0 +1,25 @@
+{
+  "name": "appmobilydesktop",
+  "version": "1.0.0",
+  "description": "Visor de URLs con vista móvil + escritorio en paralelo para grabar contenido",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "electron",
+    "webview",
+    "responsive",
+    "preview"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^33.2.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "electron"
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobile + Desktop Viewer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Barra superior: navegación + URL -->
+  <header class="toolbar">
+    <div class="nav-buttons">
+      <button id="back" title="Atrás">‹</button>
+      <button id="forward" title="Adelante">›</button>
+      <button id="reload" title="Recargar">⟳</button>
+    </div>
+
+    <form id="url-form" class="url-form">
+      <input
+        id="url-input"
+        type="text"
+        placeholder="Escribe una URL (ej: vercel.com) y pulsa Enter"
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <button type="submit" id="go">Cargar</button>
+    </form>
+
+    <div class="status" id="status">Listo</div>
+  </header>
+
+  <!-- Área dividida: móvil (20%) + escritorio (80%) -->
+  <main class="split">
+    <!-- Columna móvil -->
+    <section class="pane pane-mobile">
+      <div class="pane-label">📱 Móvil — 375 px</div>
+      <div class="phone-area" id="phone-area">
+        <div class="phone-scaler" id="phone-scaler">
+          <div class="phone-frame" id="phone-frame">
+            <webview
+              id="mobile-view"
+              class="device-view"
+              src="about:blank"
+              useragent="Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1"
+              allowpopups
+            ></webview>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Divisor arrastrable -->
+    <div class="divider" id="divider"></div>
+
+    <!-- Columna escritorio -->
+    <section class="pane pane-desktop">
+      <div class="pane-label">🖥️ Escritorio</div>
+      <div class="desktop-area">
+        <webview
+          id="desktop-view"
+          class="device-view"
+          src="about:blank"
+          allowpopups
+        ></webview>
+      </div>
+    </section>
+  </main>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+# Dependencias
+node_modules/
+
+# Builds / empaquetado
+dist/
+out/
+build/
+*.exe
+*.dmg
+*.AppImage
+*.deb
+*.rpm
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Configuración local de Claude Code
+.claude/settings.local.json
+
+# Variables de entorno
+.env
+.env.*
+!.env.example
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+*.swp
