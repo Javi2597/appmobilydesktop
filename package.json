@@ -4,7 +4,9 @@
   "description": "Visor de URLs con vista móvil + escritorio en paralelo para grabar contenido",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dist": "electron-builder --win --publish never",
+    "release": "electron-builder --win --publish always"
   },
   "keywords": [
     "electron",
@@ -12,14 +14,44 @@
     "responsive",
     "preview"
   ],
-  "author": "",
+  "author": "Javi2597",
   "license": "MIT",
+  "build": {
+    "appId": "com.javi2597.appmobilydesktop",
+    "productName": "Mobile Desktop Viewer",
+    "files": [
+      "main.js",
+      "index.html",
+      "renderer.js",
+      "styles.css",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "Javi2597",
+      "repo": "appmobilydesktop"
+    }
+  },
   "devDependencies": {
-    "electron": "^33.2.0"
+    "electron": "^33.2.0",
+    "electron-builder": "^26.15.3"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
       "electron"
+    ],
+    "ignoredBuiltDependencies": [
+      "electron-winstaller"
     ]
   }
 }
