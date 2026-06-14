@@ -49,26 +49,6 @@ pnpm install
 pnpm start        # arranca la app en modo desarrollo
 ```
 
-## Compilar el instalador
-
-```bash
-pnpm dist         # genera el instalador NSIS en dist/ (sin publicar)
-pnpm release      # genera y publica el release en GitHub (requiere GH_TOKEN)
-```
-
-El artefacto queda en `dist/Mobile Desktop Viewer Setup x.y.z.exe`.
-La versión se controla con el campo `version` de `package.json`.
-
-## Icono
-
-El icono se genera a partir de un SVG vectorial:
-
-```bash
-pnpm icon         # build/icon.svg -> build/icon.ico (multi-resolución) + build/icon.png
-```
-
-Edita `build/icon.svg` y vuelve a ejecutar `pnpm icon` para actualizarlo.
-
 ## Seguridad
 
 La app carga contenido web no confiable, así que está endurecida (hardening de
