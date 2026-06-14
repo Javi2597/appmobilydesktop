@@ -1,6 +1,6 @@
 {
   "name": "appmobilydesktop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Visor de URLs con vista móvil + escritorio en paralelo para grabar contenido",
   "main": "main.js",
   "scripts": {
