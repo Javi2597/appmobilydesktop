@@ -7,6 +7,17 @@ vídeo externo.
 
 <img src="build/icon.png" alt="Icono de la app" width="128" />
 
+## Capturas
+
+Una página cargada en ambas vistas a la vez (móvil 375 px + escritorio), con el
+scroll sincronizado:
+
+![Vista con una página cargada](screenshots/preview-pagina.png)
+
+Estado inicial, listo para escribir una URL:
+
+![Vista inicial vacía](screenshots/preview-vacia.png)
+
 ## Descargar (usuarios)
 
 Descarga el instalador de Windows desde la
