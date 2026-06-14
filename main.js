@@ -20,6 +20,7 @@ function createWindow() {
     minHeight: 600,
     backgroundColor: '#1b1d23',
     title: 'Mobile + Desktop Viewer',
+    icon: path.join(__dirname, 'build', 'icon.png'),
     webPreferences: {
       // Necesario para poder usar la etiqueta <webview>, que carga
       // cualquier URL como un navegador real (sin las restricciones

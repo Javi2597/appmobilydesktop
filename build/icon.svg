@@ -1,0 +1,41 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1024" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2a2e38"/>
+      <stop offset="1" stop-color="#15171c"/>
+    </linearGradient>
+    <linearGradient id="scr" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6f9bff"/>
+      <stop offset="1" stop-color="#3f6fe0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fondo -->
+  <rect x="0" y="0" width="1024" height="1024" rx="224" fill="url(#bg)"/>
+
+  <!-- ===== Monitor (escritorio) ===== -->
+  <rect x="150" y="312" width="470" height="352" rx="34" fill="#30343f" stroke="#3c414e" stroke-width="4"/>
+  <rect x="182" y="344" width="406" height="288" rx="16" fill="url(#scr)"/>
+  <!-- barra de direcciones -->
+  <rect x="210" y="372" width="350" height="34" rx="17" fill="#ffffff" fill-opacity="0.28"/>
+  <!-- contenido de la web -->
+  <rect x="210" y="430" width="300" height="16" rx="8" fill="#ffffff" fill-opacity="0.18"/>
+  <rect x="210" y="466" width="236" height="16" rx="8" fill="#ffffff" fill-opacity="0.18"/>
+  <rect x="210" y="502" width="272" height="16" rx="8" fill="#ffffff" fill-opacity="0.18"/>
+  <!-- pie / soporte -->
+  <rect x="355" y="664" width="60" height="34" fill="#30343f"/>
+  <rect x="300" y="696" width="170" height="26" rx="13" fill="#30343f"/>
+
+  <!-- ===== Teléfono (móvil) ===== -->
+  <rect x="666" y="378" width="196" height="322" rx="42" fill="#1b1e25" stroke="#3c414e" stroke-width="4"/>
+  <rect x="690" y="410" width="148" height="258" rx="24" fill="url(#scr)"/>
+  <!-- notch -->
+  <rect x="746" y="422" width="36" height="12" rx="6" fill="#1b1e25"/>
+  <!-- contenido móvil -->
+  <rect x="708" y="452" width="112" height="18" rx="9" fill="#ffffff" fill-opacity="0.28"/>
+  <rect x="708" y="492" width="112" height="12" rx="6" fill="#ffffff" fill-opacity="0.18"/>
+  <rect x="708" y="520" width="84" height="12" rx="6" fill="#ffffff" fill-opacity="0.18"/>
+  <rect x="708" y="548" width="100" height="12" rx="6" fill="#ffffff" fill-opacity="0.18"/>
+  <!-- indicador inferior -->
+  <rect x="740" y="642" width="48" height="8" rx="4" fill="#ffffff" fill-opacity="0.35"/>
+</svg>
