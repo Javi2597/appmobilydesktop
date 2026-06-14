@@ -24,12 +24,23 @@ function normalizeUrl(value) {
   if (!/^https?:\/\//i.test(url)) {
     url = 'https://' + url;
   }
-  return url;
+  // Allowlist de esquemas: solo http/https. Esto bloquea intentos de cargar
+  // file:///, javascript:, data:, etc. en las vistas.
+  try {
+    const parsed = new URL(url);
+    if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') return null;
+    return parsed.href;
+  } catch {
+    return null;
+  }
 }
 
 function loadUrl(value) {
   const url = normalizeUrl(value);
-  if (!url) return;
+  if (!url) {
+    statusEl.textContent = 'URL no válida';
+    return;
+  }
   urlInput.value = url;
   views.forEach((v) => v.loadURL(url));
 }
